@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Bloques Moodle</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='80'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+    
+    <!-- Bootstrap 4.6.2 (Necesario para que la previsualización del contenido Moodle se vea correcta) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- Tailwind CSS (Para el diseño de la aplicación) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        blob: "blob 7s infinite",
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": { transform: "translate(0px, 0px) scale(1)" },
+                            "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+                            "66%": { transform: "translate(-20px, 20px) scale(0.9)" },
+                            "100%": { transform: "translate(0px, 0px) scale(1)" },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            /* Simulación de animate-in de tailwindcss-animate */
+            .animate-in {
+                animation: fadeIn 0.5s ease-out forwards;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            
+            /* Custom Scrollbar */
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: #f1f5f9; 
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: #cbd5e1; 
+                border-radius: 4px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: #94a3b8; 
+            }
+        }
+    </style>
+
+    <!-- FontAwesome 6.4.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+  <script type="module" crossorigin src="/assets/index-CgEKpnwI.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-75KUdUui.css">
+</head>
+<body class="bg-slate-50">
+    <div id="root"></div>
+</body>
+</html>
